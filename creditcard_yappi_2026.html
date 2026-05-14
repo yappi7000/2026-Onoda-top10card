@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>おすすめクレジットカード 2026年最新版 | やっぴ〜@MNP×クレカ錬金術師</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Outfit:wght@700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f0f4ff;
+    --bg2: #e8eeff;
+    --surface: #ffffff;
+    --surface2: #f5f8ff;
+    --surface3: #eaf0ff;
+    --border: rgba(59,130,246,0.12);
+    --border2: rgba(59,130,246,0.22);
+    --text: #1a2340;
+    --muted: #64748b;
+    --muted2: #94a3b8;
+    --accent: #2563eb;
+    --accent2: #3b82f6;
+    --accent3: #60a5fa;
+    --accent-light: #eff6ff;
+    --green: #16a34a;
+    --green-light: #f0fdf4;
+    --green-border: rgba(22,163,74,0.2);
+    --amber: #d97706;
+    --amber-light: #fffbeb;
+    --amber-border: rgba(217,119,6,0.2);
+    --red: #dc2626;
+    --red-light: #fef2f2;
+    --red-border: rgba(220,38,38,0.2);
+    --purple: #7c3aed;
+    --purple-light: #f5f3ff;
+    --gold: #b45309;
+    --gold-light: #fefce8;
+    --shadow: 0 1px 3px rgba(59,130,246,0.08), 0 4px 16px rgba(59,130,246,0.06);
+    --shadow-hover: 0 4px 20px rgba(59,130,246,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(37,99,235,0.3);
+  }
+  .header-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-brand {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .header-brand .icon { font-size: 20px; }
+  .header-badge {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100px;
+    padding: 4px 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.1em;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(160deg, #1e3a8a 0%, #1d4ed8 40%, #2563eb 70%, #3b82f6 100%);
+    padding: 72px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 80%, rgba(255,255,255,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 40% at 80% 20%, rgba(147,197,253,0.1) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--bg));
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100px;
+    padding: 6px 18px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 24px;
+    animation: fadeUp 0.5s ease both;
+  }
+  .hero h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: clamp(36px, 8vw, 68px);
+    color: #fff;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    animation: fadeUp 0.5s 0.1s ease both;
+  }
+  .hero h1 .sub { display: block; font-size: 0.55em; font-weight: 700; opacity: 0.85; margin-top: 6px; }
+  .hero-desc {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    max-width: 520px;
+    margin: 0 auto 32px;
+    animation: fadeUp 0.5s 0.2s ease both;
+  }
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    animation: fadeUp 0.5s 0.3s ease both;
+  }
+  .hero-tag {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100px;
+    padding: 5px 14px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.9);
+  }
+  .hero-tag.alert-tag {
+    background: rgba(254,202,202,0.2);
+    border-color: rgba(254,202,202,0.4);
+    color: #fecaca;
+  }
+
+  /* ── CONTAINER ── */
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+
+  /* ── SECTION LABEL ── */
+  .sec-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 56px 0 20px;
+  }
+  .sec-label-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-light);
+    border: 1px solid rgba(37,99,235,0.2);
+    border-radius: 6px;
+    padding: 3px 10px;
+    letter-spacing: 0.05em;
+  }
+  .sec-label-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .sec-label-title em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  /* ── ALERT BOX ── */
+  .alert-box {
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.7;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .alert-box .ai { font-size: 18px; flex-shrink: 0; }
+  .alert-info  { background: var(--accent-light); border: 1px solid rgba(37,99,235,0.15); color: #1e40af; }
+  .alert-warn  { background: var(--amber-light);  border: 1px solid var(--amber-border);  color: #92400e; }
+  .alert-danger{ background: var(--red-light);    border: 1px solid var(--red-border);    color: #991b1b; }
+  .alert-success{background: var(--green-light);  border: 1px solid var(--green-border);  color: #14532d; }
+  .alert-box strong { font-weight: 700; }
+
+  /* ── CARD ITEM ── */
+  .card-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    gap: 16px;
+    align-items: start;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+  }
+  .card-item:hover {
+    box-shadow: var(--shadow-hover);
+    border-color: var(--border2);
+    transform: translateY(-1px);
+  }
+  .rank-num {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: var(--muted2);
+    line-height: 1;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .rank-num.gold-rank { color: var(--accent); }
+  .card-body { min-width: 0; }
+  .card-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .card-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .card-desc strong { color: var(--text); font-weight: 700; }
+  .card-desc .good { color: var(--green); font-weight: 600; }
+  .card-desc .caution { color: var(--amber); font-weight: 600; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 100px;
+  }
+  .tag-free    { background: var(--green-light);  color: var(--green);  border: 1px solid var(--green-border); }
+  .tag-paid    { background: var(--accent-light);  color: var(--accent); border: 1px solid rgba(37,99,235,0.2); }
+  .tag-mile    { background: var(--purple-light);  color: var(--purple); border: 1px solid rgba(124,58,237,0.2); }
+  .tag-hotel   { background: var(--gold-light);    color: var(--gold);   border: 1px solid rgba(180,83,9,0.2); }
+  .tag-power   { background: var(--red-light);     color: var(--red);    border: 1px solid var(--red-border); }
+  .tag-new     { background: #fdf4ff; color: #7e22ce; border: 1px solid rgba(126,34,206,0.2); }
+
+  .rate-badge {
+    text-align: right;
+    white-space: nowrap;
+    padding-top: 4px;
+  }
+  .rate-val {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--accent);
+    display: block;
+    line-height: 1.1;
+  }
+  .rate-label {
+    font-size: 10px;
+    color: var(--muted2);
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* ── 最強カードセクション ── */
+  .best-section {
+    margin-bottom: 16px;
+  }
+  .best-header {
+    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+    border-radius: 16px 16px 0 0;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .best-header.green-hd { background: linear-gradient(135deg, #15803d, #22c55e); }
+  .best-header.gold-hd  { background: linear-gradient(135deg, #b45309, #f59e0b); }
+  .best-icon { font-size: 28px; }
+  .best-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .best-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 2px;
+  }
+  .best-body {
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
+  }
+
+  .winner-card {
+    background: var(--surface2);
+    border: 1.5px solid var(--accent2);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .winner-card.green-border { border-color: #22c55e; }
+  .winner-card.gold-border  { border-color: #f59e0b; }
+  .winner-badge {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 100px;
+    background: var(--accent);
+    color: #fff;
+  }
+  .winner-badge.green-bg { background: #16a34a; }
+  .winner-badge.gold-bg  { background: #d97706; }
+  .winner-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+    margin-top: 4px;
+  }
+  .winner-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+  .winner-desc strong { color: var(--text); font-weight: 700; }
+  .winner-desc .hi { color: var(--accent); font-weight: 700; }
+  .winner-desc .hi-green { color: var(--green); font-weight: 700; }
+  .winner-desc .hi-gold  { color: var(--gold);  font-weight: 700; }
+
+  .runner-up-list { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+  .runner-up {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+  .runner-icon { font-size: 16px; flex-shrink: 0; }
+  .runner-up strong { color: var(--text); font-weight: 700; display: block; margin-bottom: 2px; }
+
+  /* ── BONUS GRID ── */
+  .bonus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 600px) { .bonus-grid { grid-template-columns: 1fr; } }
+  .bonus-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.2s, transform 0.15s;
+  }
+  .bonus-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-1px); }
+  .bonus-label { font-size: 10px; font-weight: 700; color: var(--muted2); letter-spacing: 0.1em; margin-bottom: 6px; }
+  .bonus-name { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .bonus-desc { font-size: 12px; color: var(--muted); line-height: 1.65; }
+
+  /* ── CONCLUSION ── */
+  .conclusion {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb 60%, #3b82f6);
+    border-radius: 20px;
+    padding: 36px 32px;
+    text-align: center;
+    margin-top: 48px;
+    box-shadow: 0 8px 32px rgba(37,99,235,0.25);
+  }
+  .conclusion-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 14px;
+  }
+  .conclusion-body {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.85;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .conclusion-body strong { color: #fff; font-weight: 700; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border2) 30%, var(--border2) 70%, transparent);
+    margin: 40px 0;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #fff;
+    border-top: 1px solid var(--border);
+    padding: 24px 20px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  footer strong { color: var(--accent); font-weight: 700; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .card-item { animation: fadeUp 0.4s ease both; }
+  .card-item:nth-child(1)  { animation-delay: 0.05s; }
+  .card-item:nth-child(2)  { animation-delay: 0.10s; }
+  .card-item:nth-child(3)  { animation-delay: 0.15s; }
+  .card-item:nth-child(4)  { animation-delay: 0.20s; }
+  .card-item:nth-child(5)  { animation-delay: 0.25s; }
+  .card-item:nth-child(6)  { animation-delay: 0.30s; }
+  .card-item:nth-child(7)  { animation-delay: 0.35s; }
+  .card-item:nth-child(8)  { animation-delay: 0.40s; }
+  .card-item:nth-child(9)  { animation-delay: 0.45s; }
+  .card-item:nth-child(10) { animation-delay: 0.50s; }
+
+  @media (max-width: 600px) {
+    .card-item { grid-template-columns: 40px 1fr; }
+    .rate-badge { display: none; }
+    .header-badge { display: none; }
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="icon">💳</span>
+      やっぴ〜@MNP×クレカ錬金術師
+    </div>
+    <span class="header-badge">2026 EDITION</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">💳 Credit Card Strategy — Japan 2026</div>
+  <h1>
+    おすすめクレカ
+    <span class="sub">TOP 10 完全ガイド</span>
+  </h1>
+  <p class="hero-desc">マリオットAMEX改定・ANA SFC条件変更を受けた最新版。やっぴ〜が徹底解説するカテゴリ別最強カード情報つき。</p>
+  <div class="hero-tags">
+    <span class="hero-tag alert-tag">⚠️ マリオット年会費 約8万円に改定</span>
+    <span class="hero-tag alert-tag">⚠️ ANA SFC 年300万円以上が条件に</span>
+    <span class="hero-tag">📅 2026年5月時点</span>
+    <span class="hero-tag">✨ 最強カード3カテゴリ付き</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- アラート -->
+  <div class="alert-box alert-warn">
+    <span class="ai">⚡</span>
+    <div>2025〜2026年にかけてクレカ界隈は大きく変動。かつて「95%の人に推奨」だった<strong>マリオットボンボイプレミアムが大解約フェーズ</strong>に突入。現在は「これ1枚で最強」と言えるカードは存在しない。<strong>用途に合わせた複数枚活用がベスト戦略。</strong></div>
+  </div>
+
+  <!-- ===================== TOP 10 ===================== -->
+  <div class="sec-label">
+    <span class="sec-label-num">SECTION 01</span>
+    <span class="sec-label-title">🏆 メインランキング <em>TOP 10</em></span>
+  </div>
+
+  <!-- 1 リクルート -->
+  <div class="card-item">
+    <div class="rank-num gold-rank">01</div>
+    <div class="card-body">
+      <div class="card-name">💳 リクルートカード</div>
+      <div class="card-desc">
+        年会費無料で<strong>還元率1.2%</strong>はトップクラス。コンビニでも、ネットでも均一1.2%が強み。リクルートポイント→<strong>Dポイント交換可</strong>、証券口座でS&P500購入も可能で実質現金化できる。<br>
+        <span class="caution">⚠ 国際ブランドはJCBのみ。海外利用時は注意。</span>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-free">年会費無料</span>
+        <span class="tag tag-paid">1.2%均一還元</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">1.2%</span>
+      <span class="rate-label">還元率</span>
+    </div>
+  </div>
+
+  <!-- 2 ANA -->
+  <div class="card-item">
+    <div class="rank-num">02</div>
+    <div class="card-body">
+      <div class="card-name">✈️ ANAカード</div>
+      <div class="card-desc">
+        <strong>100円＝1マイル</strong>。年会費8,000〜15,000円。マイルはうまく使えば<strong>1マイル＝最大10円相当</strong>に化ける。少マイルで乗れるキャンペーン・特典航空券活用が鍵。サーチャージ上昇に注意。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-mile">マイル系</span>
+        <span class="tag tag-paid">年会費あり</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">×10</span>
+      <span class="rate-label">最大価値</span>
+    </div>
+  </div>
+
+  <!-- 3 JAL -->
+  <div class="card-item">
+    <div class="rank-num">03</div>
+    <div class="card-body">
+      <div class="card-name">✈️ JALカード</div>
+      <div class="card-desc">
+        <strong>2マイルでランダム旅行</strong>（往復7,000マイル〜）など独自の使い方が豊富。学生は<strong>JALカードナビ</strong>がおすすめ。家族間でのマイルシェア機能で親のマイルを子供に譲渡可能。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-mile">マイル系</span>
+        <span class="tag tag-paid">年会費あり</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">—</span>
+      <span class="rate-label">マイル活用</span>
+    </div>
+  </div>
+
+  <!-- 4 三井住友 -->
+  <div class="card-item">
+    <div class="rank-num">04</div>
+    <div class="card-body">
+      <div class="card-name">🏪 三井住友カード</div>
+      <div class="card-desc">
+        セブン・ローソン・マクドナルド・サイゼリア・スタバなどで<strong>スマホタッチ決済で最大20%還元</strong>。外貨預金・アプリログインなど細かい条件をクリアすれば<strong>コンビニで12%還元</strong>も現実的。普段の還元率は0.5%だが対象店舗での破壊力は別格。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-free">年会費無料</span>
+        <span class="tag tag-paid">最大20%還元</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">20%</span>
+      <span class="rate-label">対象店最大</span>
+    </div>
+  </div>
+
+  <!-- 5 三菱UFJ -->
+  <div class="card-item">
+    <div class="rank-num">05</div>
+    <div class="card-body">
+      <div class="card-name">🛒 三菱UFJカード</div>
+      <div class="card-desc">
+        セブン・ローソン・松屋・スープストック・<strong>OKストアなどスーパー系が充実</strong>。三井住友とかぶる店舗もあるが使い分け可能。無料なので<strong>三井住友と両方持つ</strong>のがベスト。インフレ時代の賢い買い物術として最適。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-free">年会費無料</span>
+        <span class="tag tag-paid">スーパー特化</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">—</span>
+      <span class="rate-label">スーパー特化</span>
+    </div>
+  </div>
+
+  <!-- 6 ヒルトン -->
+  <div class="card-item">
+    <div class="rank-num">06</div>
+    <div class="card-body">
+      <div class="card-name">🏨 ヒルトンオーナーズ AMEXカード</div>
+      <div class="card-desc">
+        持つだけで<strong>ヒルトンゴールド会員</strong>→朝食無料（コンラッド・ガーデンインなど対象）。年間<strong>150万円以上</strong>でウィークエンド無料宿泊付与。マリオット解約後のホテル系コスパ最強候補。<br>
+        プレミアムは200万円でダイヤモンド＋ラウンジ、300万円で無料宿泊×2。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-hotel">ホテル系</span>
+        <span class="tag tag-paid">年会費あり</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">🏨</span>
+      <span class="rate-label">朝食無料</span>
+    </div>
+  </div>
+
+  <!-- 7 マリオット -->
+  <div class="card-item">
+    <div class="rank-num">07</div>
+    <div class="card-body">
+      <div class="card-name">💎 マリオットボンボイ AMEX プレミアム</div>
+      <div class="card-desc">
+        <strong>100円＝1.25マイル</strong>で還元率は今も健在。ANA・JAL・アメリカン航空など多数に交換可能。年会費約8万円に改定されたため、<strong>年間500万円以上の決済者限定</strong>でおすすめ。副業・個人事業の仕入れ決済で使える人向け。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-power">上級者向け</span>
+        <span class="tag tag-mile">マイル高還元</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">1.25%</span>
+      <span class="rate-label">100円換算</span>
+    </div>
+  </div>
+
+  <!-- 8 マイレージプラス -->
+  <div class="card-item">
+    <div class="rank-num">08</div>
+    <div class="card-body">
+      <div class="card-name">🌎 マイレージプラス セゾンゴールド</div>
+      <div class="card-desc">
+        年会費3,000円＋オプション1.1万円で<strong>100円＝1.5マイル</strong>。ユナイテッド航空マイルは<strong>燃油サーチャージ不要</strong>で海外利用に有利。年300万円が上限（月25万円ペース）。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-mile">マイル最強</span>
+        <span class="tag tag-paid">年会費1.4万円</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">1.5%</span>
+      <span class="rate-label">マイル還元</span>
+    </div>
+  </div>
+
+  <!-- 9 ビューカード -->
+  <div class="card-item">
+    <div class="rank-num">09</div>
+    <div class="card-body">
+      <div class="card-name">🚅 ビューカードゴールド</div>
+      <div class="card-desc">
+        JR東日本エリア在住者に特におすすめ。エキネット予約で<strong>新幹線10%還元</strong>。Suicaチャージで<strong>1.5%JREポイント</strong>。<strong>JREバンク</strong>連携で新幹線4割引チケット・毎月ポイントも。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-paid">Suica対応</span>
+        <span class="tag tag-paid">JR東日本向け</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">10%</span>
+      <span class="rate-label">新幹線還元</span>
+    </div>
+  </div>
+
+  <!-- 10 楽天 -->
+  <div class="card-item">
+    <div class="rank-num">10</div>
+    <div class="card-body">
+      <div class="card-name">🛍️ 楽天カード / Amazon MC（シンプル1%還元）</div>
+      <div class="card-desc">
+        複雑なルール管理に疲れた人向け。<strong>月10万円以下の支出ならここで十分</strong>。情報を追う時間がもったいない場合、シンプルな1%還元カードで証券と連携して積立投資するのが現実的な最適解。
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-free">年会費無料</span>
+        <span class="tag tag-free">シンプル運用</span>
+      </div>
+    </div>
+    <div class="rate-badge">
+      <span class="rate-val">1%</span>
+      <span class="rate-label">シンプル還元</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ===================== 最強カード3カテゴリ ===================== -->
+  <div class="sec-label">
+    <span class="sec-label-num">SECTION 02</span>
+    <span class="sec-label-title">🥇 カテゴリ別 <em>最強カード</em> 決定版</span>
+  </div>
+
+  <div class="alert-box alert-info">
+    <span class="ai">💡</span>
+    <div>TOP10を踏まえて、やっぴ〜が独自視点でカテゴリごとに<strong>本当に使えるカード</strong>を厳選。「どれを選べばいいかわからない」という方はここを見てください！</div>
+  </div>
+
+  <!-- ── コンビニ最強 ── -->
+  <div class="best-section">
+    <div class="best-header">
+      <span class="best-icon">🏪</span>
+      <div>
+        <div class="best-heading">コンビニ最強カード</div>
+        <div class="best-sub">日常のコンビニ・飲食チェーン利用で最もお得になる1枚</div>
+      </div>
+    </div>
+    <div class="best-body">
+      <div class="winner-card">
+        <span class="winner-badge">👑 やっぴ〜推し最強</span>
+        <div class="winner-name">🏆 三井住友カード（NL / ゴールドNL）</div>
+        <div class="winner-desc">
+          セブン・ローソン・マクドナルド・サイゼリア・スタバなど<strong>対象店舗でのスマホタッチ決済が圧倒的</strong>。<br>
+          通常還元率は0.5%だが、対象コンビニ・飲食店では<span class="hi">最大20%還元</span>。外貨預金・アプリログイン等の条件をクリアすれば<span class="hi">コンビニ12%還元</span>も現実的に達成できる。<br><br>
+          <strong>✅ やっぴ〜が推す理由：</strong>年会費無料なのに対象店での還元率が圧倒的。コンビニ・ファストフードをよく使う人なら迷わずこれ一択。三菱UFJカードとの2枚持ちでさらに最強になる。
+        </div>
+      </div>
+      <div class="runner-up-list">
+        <div class="runner-up">
+          <span class="runner-icon">🥈</span>
+          <div><strong>三菱UFJカード（2位）</strong>セブン・ローソン加えてOKストア・松屋・スープストックなどスーパー系が充実。三井住友と対象店舗が一部かぶるが、スーパーをよく使う人はこちらが刺さる。<strong>両方無料なので2枚持ちが正解。</strong></div>
+        </div>
+        <div class="runner-up">
+          <span class="runner-icon">🥉</span>
+          <div><strong>リクルートカード（3位）</strong>コンビニでも均一<strong>1.2%</strong>が確実に貯まる。特定店舗縛りがないので、どこで使っても安定して高還元。「対象店舗が近くにない」という人はこちらを選ぼう。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── マイル最強 ── -->
+  <div class="best-section">
+    <div class="best-header green-hd">
+      <span class="best-icon">✈️</span>
+      <div>
+        <div class="best-heading">マイル最強カード</div>
+        <div class="best-sub">旅行好き・出張族が最も効率よくマイルを貯められる1枚</div>
+      </div>
+    </div>
+    <div class="best-body">
+      <div class="winner-card green-border">
+        <span class="winner-badge green-bg">👑 やっぴ〜推し最強</span>
+        <div class="winner-name">🏆 マイレージプラス セゾンゴールド</div>
+        <div class="winner-desc">
+          年会費1.4万円で<strong>100円＝1.5マイル</strong>という驚異的な還元率を誇る。さらに<span class="hi-green">ユナイテッド航空マイルは燃油サーチャージが不要</span>なので、海外旅行でのコスパが段違い。<br><br>
+          ANA・JALはサーチャージが高騰しているが、ユナイテッド経由ならサーチャージゼロで特典航空券を使えるのが最大の強み。年300万円（月25万円ペース）まで対象なので、日常使いにも十分。<br><br>
+          <strong>✅ やっぴ〜が推す理由：</strong>純粋なマイル還元率でトップクラス。サーチャージ不要という2026年における大きなアドバンテージ。旅行好きなら真っ先に検討すべきカード。
+        </div>
+      </div>
+      <div class="runner-up-list">
+        <div class="runner-up">
+          <span class="runner-icon">🥈</span>
+          <div><strong>ANAカード（2位）</strong>100円＝1マイル。特典航空券・アップグレードへの交換で1マイル最大10円以上の価値になる。少マイルキャンペーンを狙えばコスパ最強級。国内線も充実。</div>
+        </div>
+        <div class="runner-up">
+          <span class="runner-icon">🥈</span>
+          <div><strong>JALカード（同率2位）</strong>「どこかにマイル」で往復7,000マイルからランダム旅行が可能。家族間マイルシェアが優秀。学生にはJALカードナビが特におすすめ。</div>
+        </div>
+        <div class="runner-up">
+          <span class="runner-icon">🎖</span>
+          <div><strong>セゾンプラチナ AMEX（番外）</strong>年会費33,000円でJALマイル<strong>1.125マイル還元</strong>＋プライオリティパス付き。マイルとラウンジ両方欲しい人向け。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ホテル最強 ── -->
+  <div class="best-section">
+    <div class="best-header gold-hd">
+      <span class="best-icon">🏨</span>
+      <div>
+        <div class="best-heading">ホテル最強カード</div>
+        <div class="best-sub">旅行・出張でホテルをよく使う人が最もお得になる1枚</div>
+      </div>
+    </div>
+    <div class="best-body">
+      <div class="winner-card gold-border">
+        <span class="winner-badge gold-bg">👑 やっぴ〜推し最強</span>
+        <div class="winner-name">🏆 ヒルトンオーナーズ AMEX（通常カード）</div>
+        <div class="winner-desc">
+          マリオットボンボイが大改定で年会費約8万円になった今、<span class="hi-gold">コスパ最強ホテルカードに躍り出たのがヒルトンAMEX</span>。<br><br>
+          カードを持つだけで<strong>ヒルトンゴールド会員</strong>に自動昇格し、コンラッド・ガーデンインなど世界中のヒルトン系列ホテルで<strong>朝食が無料</strong>になる。<br>
+          年間150万円以上の利用で<strong>ウィークエンド無料宿泊権</strong>が付与（コンラッド東京・大阪ワールドなど対象）。年会費を考えると1泊で元が取れる圧倒的なコスパ。<br><br>
+          <strong>✅ やっぴ〜が推す理由：</strong>2026年現在、ホテルカードで最もコスパがいいのはこれ。マリオット解約組の受け皿として今が最もアツいカード。
+        </div>
+      </div>
+      <div class="runner-up-list">
+        <div class="runner-up">
+          <span class="runner-icon">🥈</span>
+          <div><strong>ヒルトンオーナーズ AMEXプレミアム（2位）</strong>年200万円でダイヤモンド＋ラウンジ利用可。年300万円で無料宿泊×2。本格的にヒルトンを活用したいヘビーユーザー向け。ポイント還元率も通常より高い。</div>
+        </div>
+        <div class="runner-up">
+          <span class="runner-icon">🥉</span>
+          <div><strong>マリオットボンボイ AMEXプレミアム（3位・条件付き）</strong>年500万円以上使える人限定でまだ価値あり。100円＝1.25マイルの還元率は健在でプラチナステータス＋無料宿泊付き。副業・法人仕入れで高額決済できる人向け。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ===================== 番外編 ===================== -->
+  <div class="sec-label">
+    <span class="sec-label-num">SECTION 03</span>
+    <span class="sec-label-title">✨ 番外編 <em>ボーナスカード</em></span>
+  </div>
+
+  <div class="bonus-grid">
+    <div class="bonus-card">
+      <div class="bonus-label">BONUS +1</div>
+      <div class="bonus-name">🛫 デルタ スカイマイル AMEX ゴールド</div>
+      <div class="bonus-desc">年会費約3万円。年150万円決済で<strong>スカイプライオリティ</strong>（ANA SFC相当）が修行なしに取得可能。継続保有でステータス維持できる唯一のルート。</div>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-label">BONUS +2</div>
+      <div class="bonus-name">💎 セゾンプラチナ AMEX</div>
+      <div class="bonus-desc">年会費33,000円。JALマイル<strong>1.125マイル還元</strong>。プライオリティパス付（レストランも利用可）。マイルとラウンジを両立したい人向け。</div>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-label">BONUS +3</div>
+      <div class="bonus-name">₿ Binanceカード</div>
+      <div class="bonus-desc">年会費無料で<strong>1.6% BNB付与</strong>。すぐにBTC・円に交換可能。暗号資産に抵抗がない人には高還元な選択肢。レート変動リスクに注意。</div>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-label">🌍 海外利用向け</div>
+      <div class="bonus-name">Wise / Revolut</div>
+      <div class="bonus-desc">海外決済手数料が多くのカードで<strong>3〜4%に値上がり</strong>中。ポイント付与はないがWise・Revoltなら低手数料。EON・JCBは1.6%で比較的安い。</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 海外注意点 -->
+  <div class="sec-label">
+    <span class="sec-label-num">SECTION 04</span>
+    <span class="sec-label-title">⚠️ <em>2026年</em> の注意点</span>
+  </div>
+
+  <div class="alert-box alert-danger">
+    <span class="ai">🌍</span>
+    <div><strong>海外決済手数料が値上がり中！</strong><br>
+    多くのカードで従来1.6%だった海外決済手数料が<strong>3〜4%</strong>に値上がりしています。海外でよく使う方は、EONカード・JCBカード（1.6%水準）か、手数料が安いWise・Revoltへの切り替えを検討しましょう（ポイント付与はなし）。</div>
+  </div>
+
+  <!-- 結論 -->
+  <div class="conclusion">
+    <div class="conclusion-title">🎯 2026年の結論</div>
+    <div class="conclusion-body">
+      「これ1枚で最強」なカードはもう存在しない。<br>
+      自分がよく使う店・サービスに合わせて<strong>2〜3枚を組み合わせる</strong>のが正解。<br>
+      複雑なポイント管理に疲れた人は<strong>シンプルな無料カード</strong>で十分。<br><br>
+      そして毎年1回は<strong>カードを見直す習慣</strong>をつけること。<br>
+      携帯・ネット回線と同様に、定期的な乗り換えが<br>インフレ時代の賢い生き方。💳✨
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>やっぴ〜@MNP×クレカ錬金術師</strong> によるクレジットカード完全ガイド 2026年版<br>
+  <span style="font-size:11px; color:var(--muted2);">※情報は2026年5月時点のものです。カードの詳細・申し込みは各社公式サイトでご確認ください。</span>
+</footer>
+
+</body>
+</html>
